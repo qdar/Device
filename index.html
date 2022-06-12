@@ -7,45 +7,158 @@
   <title>Device — Главная страница</title>
 </head>
 <body>
-  <header class="main-header">
-    <div class="logo"><img src="#" alt="Логотип Device"></div>
-    <nav class="navigation-user">
-      <div class="search">
-        <input type="text" name="search" id="search">
-        <button type="submit">Найти</button>
+  <div class="site-wrapper">
+    <header class="main-header">
+      <div class="logo"><img src="#" alt="Логотип Device"></div>
+      <div class="user-menu">
+        <div class="search">
+          <input type="text" name="search" id="search">
+          <button type="submit">Найти</button>
+        </div>
+        <ul class="user-list">
+          <li class="user-item">
+            <a class="user-link" href="#">
+              <span class="icon icon-user"></span>
+              <span>Коля Петухов</span>
+            </a>
+          </li>
+          <li class="user-item">
+            <a class="user-link" href="#">Выйти</a>
+          </li>
+          <li class="user-item">
+            <a class="user-link" href="#">
+              <span class="icon icon-compare"></span>
+              <span>Сравнить</span>
+            </a>
+          </li>
+          <li class="user-item">
+            <a class="user-link" href="#">
+              <span class="icon icon-cart"><span class="cart-count"></span></span>
+              <span>Корзина</span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <ul class="user-menu">
-        <li class="user-item">
-          <a href="#">
-            <span class="icon icon-user"></span>
-            <span>Коля Петухов</span>
-          </a>
-        </li>
-        <li class="user-item">
-          <a href="#">Выйти</a>
-        </li>
-        <li class="user-item">
-          <a href="#">
-            <span class="icon icon-compare"></span>
-            <span>Сравнить</span>
-          </a>
-        </li>
-        <li class="user-item">
-          <a href="#">
-            <span class="icon icon-cart"><span class="cart-count"></span></span>
-            <span>Корзина</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <nav class="main-navigation">
-      <ul class="main-navigation-list">
-        <li><a href="#">Каталог товаров</a></li>
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
-      </ul>
-    </nav>
-  </header>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item"><a href="#">Каталог товаров</a></li>
+          <li class="navigation-item"><a href="#">Доставка</a></li>
+          <li class="navigation-item"><a href="#">Гарантия</a></li>
+          <li class="navigation-item"><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="slider">
+        <div class="slider-item">
+          <div class="slider-image">
+            <img src="#" alt="Квадракоптер">
+          </div>
+          <div class="slider-content">
+            <span class="slider-content">01</span>
+            <h3 class="title slider-title">Порхает как бабочка, жалит как пчела!</h3>
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+            <div class="slider-navigation">
+              <a href="#" class="link slider-link">Подробнее</a>
+              <div class="arrow-slider">
+                <div class="arrow-item arrow-active"></div>
+                <div class="arrow-item"></div>
+                <div class="arrow-item"></div>
+              </div>
+            </div>
+            <div class="slider-specifications">
+              <div class="specifications-item">
+                <b>800 м</b>
+                <p>Дальность полета</p>
+              </div>
+              <div class="specifications-item">
+                <b>50 м</b>
+                <p>Радиус поражения</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2 class="visially-hidden">Выберите категорию</h2>
+        <ul class="category">
+          <li class="category-item">
+            <div class="category-icon icon-vr"></div>
+            <a href="#">Виртуальная реальность</a>
+          </li>
+          <li class="category-item">
+            <div class="category-icon icon-monopods"></div>
+            <a href="#">Моноподы для селфи</a>
+          </li>
+          <li class="category-item">
+            <div class="category-icon icon-camera"></div>
+            <a href="#">Экшн-камеры</a>
+          </li>
+          <li class="category-item">
+            <div class="category-icon icon-fitness"></div>
+            <a href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="category-item">
+            <div class="category-icon icon-smart"></div>
+            <a href="#">Умные часы</a>
+          </li>
+          <li class="category-item">
+            <div class="category-icon icon-quadrocopters"></div>
+            <a href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <div class="tab">
+          <button class="link tab-item">Доставка</button>
+          <button class="link tab-item">Гарантия</button>
+          <button class="link tab-item">Кредит</button>
+        </di>
+        <div class="tab-content">
+          <div class="tab-one">
+            <div class="tab-text">
+              <h3 class="title">Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+            <div class="tab-image">
+              <img src="#" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <article class="baner-device">
+        <div class="baner-icon baner-delivery"></div>
+        <div class="baner-content">
+          <p class="baner-slogan">Доставим редкий товар под заказ</p>
+        </div>
+        <div class="baner-icon baner-info"></div>
+      </article>
+      <section class="about">
+        <div class="columns">
+          <div class="column-item">
+            <h2 class="title title-line">О нас</h2>
+            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+            <p>Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
+            <ul class="list">
+              <li>Меловые линии</li>
+              <li>СДИК</li>
+              <li>ТоксБерри</li>
+            </ul>
+            <a href="#" class="link about-link">Подробнее о нас</a>
+          </div>
+          <div class="column-item">
+            <h2 class="title title-line">Контакты</h2>
+            <p>Вы можете забрать товар сами, заехав в наш офис. Заодно сможете проверить работоспособность покупки.</p>
+            <h3>Интернет-магазин «Девайс»</h3>
+            <address>Санкт-Петербург, набережная реки Карповки, 5, литера П. <br><a href="tel:+78128121212">+7 (812) 812-12-12</a></address>
+            <h3>Время работы</h3>
+            <p>пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
+            <a href="#" class="link about-link">Напишите нам</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
 </body>
 </html>
