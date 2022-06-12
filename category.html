@@ -7,8 +7,8 @@
   <title>Моноподы для селфи</title>
 </head>
 <body>
-  <div class="site-wrapper">
-    <header class="main-header">
+  <header class="main-header">
+    <div class="wrapper">
       <div class="logo"><img src="#" alt="Логотип Device"></div>
       <div class="user-menu">
         <div class="search">
@@ -47,11 +47,124 @@
           <li class="navigation-item"><a href="#">Контакты</a></li>
         </ul>
       </nav>
+    </div>
+  </header>
+  <main>
+    <header class="page-header">
+      <div class="wrapper">
+        <h2 class="title page-title">Моноподы для селфи</h2>
+        <ul class="breadcrumps">
+          <li class="breadcrumps-item"><a class="breadcrumps-link" href="#">Главная</a></li>
+          <li class="breadcrumps-item"><a class="breadcrumps-link" href="#">Каталог товаров</a></li>
+          <li class="breadcrumps-item"><a class="breadcrumps-link" href="#">Моноподы для селфи</a></li>
+        </ul>
+      </div>
     </header>
-    <main>
-
-    </main>
-    <footer>
+    <section class="page-content">
+      <div class="wrapper">
+        <aside class="left-sidebar">
+          <p class="title-small">Фильтр:</p>
+          <form action="#">
+            <p class="form-title">Цвет</p>
+            <label for="black">
+              <input type="checkbox" name="color" id="black" checked> Черный
+            </label>
+            <label for="white">
+              <input type="checkbox" name="color" id="white" checked> Белый
+            </label>
+            <label for="blue">
+              <input type="checkbox" name="color" id="blue"> Синий
+            </label>
+            <label for="red">
+              <input type="checkbox" name="color" id="red"> Красный
+            </label>
+            <label for="pink">
+              <input type="checkbox" name="color" id="pink"> Розовый
+            </label>
+            <p class="title-small">Bluetooth:</p>
+            <label for="yes">
+              <input type="radio" value="Есть" name="bluetooth" id="yes" checked>
+            </label>
+            <label for="no">
+              <input type="radio" value="Нет" name="bluetooth" id="no">
+            </label>
+            <button type="submit" class="link button-link">Показать</button>
+          </form>
+        </aside>
+        <div class="category-content">
+          <header class="header-sort">
+            <p class="title-small">Сортировка:</p>
+            <form action="#">
+              <select name="sort">
+                <option value="popular">Популярное</option>
+                ...
+              </select>
+            </form>
+            <div class="order">
+              <button type="button" class="up"></button>
+              <button type="button" class="down"></button>
+            </div>
+          </header>
+          <div class="products-content">
+            <ul class="products">
+              <li class="products-item">
+                <img src="#" alt="Любительская селфи-палка">
+                <div class="products-meta">
+                  <h3 class="product-title">Любительская селфи-палка</h3>
+                  <p class="products-price">500 ₽</p>
+                </div>
+              </li>
+              <li class="products-item">
+                <img src="#" alt="Профессиональная селфи-палка ">
+                <div class="products-meta">
+                  <h3 class="product-title">Профессиональная селфи-палка </h3>
+                  <p class="products-price">1 500 ₽</p>
+                </div>
+              </li>
+              <li class="products-item">
+                <img src="#" alt="Непотопляемая селфи-палка">
+                <div class="products-meta">
+                  <h3 class="product-title">Непотопляемая селфи-палка</h3>
+                  <p class="products-price">2 500 ₽</p>
+                </div>
+              </li>
+              <li class="products-item">
+                <img src="#" alt="Селфи-палка «Следуй за мной»">
+                <div class="products-meta">
+                  <h3 class="product-title">Селфи-палка «Следуй за мной»</h3>
+                  <p class="products-price">1 500 ₽</p>
+                </div>
+              </li>
+              <button type="button" class="load-more">Загрузить ещё</button>
+            </ul>
+            <ul class="pagination">
+              <li class="pagination-nav">
+                <a class="pagination-link" href="#">Назад</a>
+              </li>
+              <li class="pagination-number">
+                <a class="pagination-link" href="#">1</a>
+              </li>
+              <li class="pagination-number">
+                <a class="pagination-link" href="#">2</a>
+              </li>
+              <li class="pagination-number">
+                <a class="pagination-link" href="#">3</a>
+              </li>
+              ...
+              <li class="pagination-number">
+                <a class="pagination-link" href="#">15</a>
+              </li>
+              <li class="pagination-nav">
+                <a class="pagination-link" href="#">Вперёд</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrapper">
       <div class="logo">
         <img src="#" alt="Логотип">
       </div>
@@ -83,7 +196,7 @@
           <a class="copy" href="#"><img src="#" alt=""></a>
         </div>
       </div>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 </html>
