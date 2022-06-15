@@ -28,6 +28,12 @@ body {
 a {
   text-decoration: none;
 }
+ul {
+  list-style: none;
+}
+.visially-hidden {
+  display: none;
+}
 .user-list {
   list-style: none;
 }
@@ -57,7 +63,6 @@ a {
   line-height: 50px;
 }
 .slider-number {
-  font-family: 'Rubik';
   font-weight: 700;
   font-size: 180px;
   color: #fff;
@@ -74,4 +79,8 @@ a {
 }
 .specifications-item p {
   font-size: 16px;
+}
+.category-link {
+  font-family: "Raleway", sans-serif;
+  color: #000;
 }
