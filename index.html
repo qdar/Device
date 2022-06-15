@@ -5,16 +5,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Device — Главная страница</title>
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <header class="main-header">
     <div class="wrapper">
-      <img class="logo" src="images/logo.svg" width="145" alt="Логотип Device">
+      <a class="logo" href="#">
+        <img src="images/logo.svg" width="145" height="36" alt="Логотип Device">
+      </a>
       <div class="user-menu">
-        <div class="search">
+        <form action="#" class="search">
           <input type="text" name="search" id="search">
           <button type="submit">Найти</button>
-        </div>
+        </form>
         <ul class="user-list">
           <li class="user-item">
             <a class="user-link" href="#">
