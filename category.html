@@ -16,7 +16,7 @@
       <div class="header__user-nav">
         <form class="header-search" action="https://echo.htmlacademy.ru/">
           <label for="search" class="visually-hidden">Введите искомое значение</label>
-          <input class="header-search__input" name="search" id="search" type="text" placeholder="Текст поиска">
+          <input class="header-search__input" name="search" id="search" type="search" placeholder="Текст поиска" required>
           <button type="submit">Найти</button>
         </form>
         <ul class="header__user-list user-list">
@@ -77,31 +77,39 @@
       <div class="wrapper">
         <aside class="page-body__sidebar left-sidebar">
           <p class="page-body__subtitle">Фильтр:</p>
-          <form action="#">
-            <p class="form-title">Цвет</p>
-            <label for="black">
-              <input type="checkbox" name="color" id="black" checked> Черный
-            </label>
-            <label for="white">
-              <input type="checkbox" name="color" id="white" checked> Белый
-            </label>
-            <label for="blue">
-              <input type="checkbox" name="color" id="blue"> Синий
-            </label>
-            <label for="red">
-              <input type="checkbox" name="color" id="red"> Красный
-            </label>
-            <label for="pink">
-              <input type="checkbox" name="color" id="pink"> Розовый
-            </label>
-            <p class="title-small">Bluetooth:</p>
-            <label for="yes">
-              <input type="radio" value="Есть" name="bluetooth" id="yes" checked>
-            </label>
-            <label for="no">
-              <input type="radio" value="Нет" name="bluetooth" id="no">
-            </label>
-            <button type="submit" class="button button-link">Показать</button>
+          <form class="filter" action="#">
+            <fieldset>
+              <legend class="filter__title">Стоимость</legend>
+              <input type="range" min="1" max="10000" step="100">
+            </fieldset>
+            <fieldset>
+              <legend class="filter__title">Цвет</legend>
+              <label for="black">
+                <input type="checkbox" name="color" id="black" checked> Черный
+              </label>
+              <label for="white">
+                <input type="checkbox" name="color" id="white" checked> Белый
+              </label>
+              <label for="blue">
+                <input type="checkbox" name="color" id="blue"> Синий
+              </label>
+              <label for="red">
+                <input type="checkbox" name="color" id="red"> Красный
+              </label>
+              <label for="pink">
+                <input type="checkbox" name="color" id="pink"> Розовый
+              </label>
+            </fieldset>
+            <fieldset>
+              <legend class="filter__title">Bluetooth</legend>
+              <label for="yes">
+                <input type="radio" value="Есть" name="bluetooth" id="yes" checked>
+              </label>
+              <label for="no">
+                <input type="radio" value="Нет" name="bluetooth" id="no">
+              </label>
+            </fieldset>
+            <button type="submit" class="button filter__button">Показать</button>
           </form>
         </aside>
         <div class="page-body__content">
