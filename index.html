@@ -54,8 +54,8 @@
   </header>
   <main class="main-page">
     <h1 class="visually-hidden">Device — интернет-магазин техники</h1>
-    <div class="wrapper">
-      <section class="slider">
+    <section class="slider">
+      <div class="wrapper">
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="slider__list">
           <!-- Первый слайд -->
@@ -80,33 +80,35 @@
           </li>
           <!-- Конец слайда -->
         </ul>
-      </section>
-      <section class="categories">
-        <div class="wrapper">
-          <h2 class="visually-hidden">Выберите категорию</h2>
-          <ul class="categories__list">
-            <li class="categories__item">
-              <a class="categories__link" href="#">Виртуальная реальность</a>
-            </li>
-            <li class="categories__item">
-              <a class="categories__link" href="#">Моноподы для селфи</a>
-            </li>
-            <li class="categories__item">
-              <a class="categories__link" href="#">Экшн-камеры</a>
-            </li>
-            <li class="categories__item">
-              <a class="categories__link" href="#">Фитнес-браслеты</a>
-            </li>
-            <li class="categories__item">
-              <a class="categories__link" href="#">Умные часы</a>
-            </li>
-            <li class="categories__item">
-              <a class="categories__link" href="#">Квадрокоптеры</a>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="service">
+      </div>
+    </section>
+    <section class="categories">
+      <div class="wrapper">
+        <h2 class="visually-hidden">Выберите категорию</h2>
+        <ul class="categories__list">
+          <li class="categories__item">
+            <a class="categories__link" href="#">Виртуальная реальность</a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Моноподы для селфи</a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Экшн-камеры</a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Умные часы</a>
+          </li>
+          <li class="categories__item">
+            <a class="categories__link" href="#">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="service">
+      <div class="wrapper">
         <h2 class="visually-hidden">Важная информация для покупателей</h2>
         <div class="service__tabs">
           <button class="button service__tab" type="button">Доставка</button>
@@ -127,14 +129,18 @@
             <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
           </li>
         </ul>
-      </section>
-      <div class="banner">
+      </div>
+    </section>
+    <div class="banner">
+      <div class="wrapper">
         <a class="banner__link" href="#">
           Доставим редкий товар под заказ
           <i class="banner__icon">i</i>
         </a>
       </div>
-      <section class="about">
+    </div>
+    <section class="about">
+      <div class="wrapper">
         <div class="about__content">
           <h2 class="about__title">О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -158,18 +164,20 @@
           <p>пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
           <a class="button about__link" href="#">Напишите нам</a>
         </div>
-      </section>
-      <section class="mailing">
+      </div>
+    </section>
+    <section class="mailing">
+      <div class="wrapper">
         <h2 class="mailing__title">Подпишитесь на рассылку</h2>
         <p>Еженедельный дайджест с обзорами новинок, длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
         <form class="mailing__form" action="https://echo.htmlacademy.ru/">
           <label for="email" class="visually-hidden">Введите адрес электронной почты</label>
-          <input class="mailing__form-field" type="email" name="email">
+          <input class="mailing__form-field" type="email" name="email" id="email">
           <button type="submit" class="mailing__form-button">Подписаться</button>
         </form>
         <p class="mailing__tagging">Это бесплатно</p>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="wrapper">
