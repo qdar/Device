@@ -25,3 +25,107 @@ body {
   font-size: 18px;
   line-height: 30px;
 }
+.visually-hidden {
+  display: none;
+}
+.clear-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wrapper {
+  width: 1160px;
+  margin: 0 auto;
+}
+/* header */
+.header-search__input {
+  border: 2px solid #000;
+  width: 360px;
+  height: 40px;
+  border-radius: 50px 0 0 50px;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+.header-search__input::placeholder {
+  color: #000;
+  font-size: 16px;
+}
+.header-search__button {
+  border: 2px solid #000;
+  border-radius: 0 50px 50px 0;
+  width: 160px;
+  height: 40px;
+  font-size: 16px;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.user-list__link {
+  color: #000;
+  text-decoration: none;
+  padding-left: 30px;
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+.user-list__link--user {
+  background-image: url(/images/icons/icon-user.svg);
+  background-size: 13px;
+}
+.user-list__link--compare {
+  background-image: url(/images/icons/icon-compare.svg);
+  background-size: 10px;
+}
+.user-list__link--cart {
+  background-image: url(/images/icons/icon-cart.svg);
+  background-size: 16px;
+  position: relative;
+}
+.user-list__link--cart::before {
+  content: attr(data-count);
+  color: #000;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  font-size: 14px;
+  position: absolute;
+  left: -14px;
+  bottom: 0;
+}
+
+.navigation__link {
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;;
+}
+/* slider */
+.slider__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+}
+.button {
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.2em;
+  position: relative;
+}
+.button::after {
+  content: '';
+  display: block;
+  width: 220px;
+  height: 8px;
+  background: #FFE17F;
+  position: absolute;
+  bottom: 6px;
+  z-index: -1;
+}
