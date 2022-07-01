@@ -118,14 +118,40 @@ body {
   text-decoration: none;
   letter-spacing: 0.2em;
   position: relative;
+  padding: 0 24px;
 }
 .button::after {
   content: '';
   display: block;
-  width: 220px;
+  width: 100%;
   height: 8px;
   background: #FFE17F;
   position: absolute;
   bottom: 6px;
   z-index: -1;
+}
+.spec-column__item b {
+  font-size: 36px;
+  font-weight: normal;
+  color: #000;
+}
+.spec-column__item span {
+  font-size: 16px;
+}
+
+/* categories */
+.categories__link {
+  color: #000;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+}
+.categories__item::before {
+  content: '';
+  background: var(--icon);
+  background-repeat: no-repeat;
+  display: block;
+  width: 160px;
+  height: 160px;
+  background-color: #ffe17f;
 }
