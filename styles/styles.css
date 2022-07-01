@@ -177,3 +177,82 @@ body {
   width: 136px;
   height: 164px;
 }
+/* banner */
+.banner {
+  background: #f0f0f0;
+  height: 100px;
+}
+.banner__link {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.2em;
+  color: #000;
+  text-decoration: none;
+  display: flex;
+}
+.banner__link::before {
+  content: '';
+  display: flex;
+  width: 125px;
+  height: 100px;
+  background: #FFE17F;
+  background-image: url(/images/icons/delivery.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.banner__icon {
+  color: rgba(0, 0, 0, 0.3);
+  background: #DCDCDC;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-style: normal;
+}
+/* about */
+.about__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000;
+  padding-top: 40px;
+  position: relative;
+}
+.about__title::before {
+  content: '';
+  display: block;
+  width: 84px;
+  height: 7px;
+  background: #000;
+  position: absolute;
+  top: 0;
+}
+.about__list li {
+  position: relative;
+  padding-left: 26px;
+}
+.about__list li::before {
+  content: '\2022';
+  color: #FFC700;
+  position: absolute;
+  left: 0px;
+  display: block;
+  height: 8px;
+  width: 8px;
+}
+.about__subtitle {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+address {
+  font-style: normal;
+}
+.black-link {
+  color: #000;
+}
+/* mailing */
+.mailing__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000;
+}
