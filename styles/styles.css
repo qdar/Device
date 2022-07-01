@@ -24,6 +24,7 @@ body {
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
+  margin: 0;
 }
 .visually-hidden {
   display: none;
@@ -116,6 +117,9 @@ body {
   position: absolute;
   left: -14px;
   bottom: 0;
+}
+.user-list__link--exit {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .navigation__link {
@@ -234,7 +238,7 @@ body {
   content: '\2022';
   color: #FFC700;
   position: absolute;
-  left: 0px;
+  left: 0;
   display: block;
   height: 8px;
   width: 8px;
@@ -250,9 +254,120 @@ address {
   color: #000;
 }
 /* mailing */
+.mailing {
+  background: #F0F0F0;
+}
 .mailing__title {
   font-family: "Raleway", sans-serif;
   font-size: 50px;
   line-height: 50px;
+  color: #000;
+}
+.mailing__form-field {
+  font-size: 18px;
+  border: 0;
+  border-bottom: 3px solid #C4C4C4;
+  background: transparent;
+  height: 55px;
+}
+.mailing__form-button {
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  font-size: 18px;
+  border: 3px solid #c4c4c4;
+  background: transparent;
+  width: 252px;
+  height: 55px;
+  letter-spacing: 0.2em;
+}
+.mailing__tagging {
+  padding-left: 32px;
+  background-image: url(../images/icons/tick-big.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 16px;
+}
+/* footer */
+.footer {
+  background: #444;
+  font-size: 16px;
+  color: #fff;
+}
+.footer-menu__link {
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+  letter-spacing: 0.2em;
+  font-size: 18px;
+  text-decoration: none;
+}
+.footer-social__link {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__link {
+  color: #fff;
+}
+/* page */
+.page-header__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  color: #000;
+}
+.breadcrumps__item::after {
+  content: '>';
+  color: rgba(0, 0, 0, 0.2);
+}
+.breadcrumps__link {
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+}
+.page-body__subtitle {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000;
+}
+.filter__button {
+  border: 0;
+  background: transparent;
+  font-size: 18px;
+}
+/* products */
+.product__title {
+  letter-spacing: -0.02em;
+  color: #000;
+  font-weight: 700;
+}
+.load-more {
+  width: 100%;
+  height: 55px;
+  border: 3px solid #E5E5E5;
+  background-color: transparent;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  color: #000;
+  font-size: 16px;
+  margin: 44px 0;
+}
+.pagination {
+  background: #EBEBEB;
+}
+.pagination__link {
+  font-size: 16px;
+  color: rgba(68, 68, 68, 0.3);
+  text-decoration: none;
+}
+.pagination__link--text {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
   color: #000;
 }
