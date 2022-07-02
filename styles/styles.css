@@ -36,7 +36,16 @@ body {
   flex-grow: 1;
 }
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .clear-list {
   margin: 0;
@@ -317,6 +326,20 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer-social__link--twitter {
+  background-image: url(../images/icons/twitter.svg);
+  background-size: 15px;
+}
+.footer-social__link--youtube {
+  background-image: url(../images/icons/youtube.svg);
+  background-size: 16px;
+}
+.footer-social__link--telegram {
+  background-image: url(../images/icons/telegram.svg);
+  background-size: 14px;
 }
 .footer__link {
   color: #fff;
