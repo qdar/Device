@@ -75,39 +75,57 @@
     <section class="page-body">
       <h2 class="visually-hidden">Товары из категории моноподы для селфи</h2>
       <div class="wrapper">
-        <aside class="page-body__sidebar left-sidebar">
+        <aside class="page-body__sidebar">
           <p class="page-body__subtitle">Фильтр:</p>
-          <form class="filter" action="#">
-            <fieldset>
-              <legend class="filter__title">Стоимость</legend>
+          <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="catalog-filter__group">
+              <legend class="catalog-filter__title">Стоимость</legend>
               <input type="range" min="1" max="10000" step="100">
             </fieldset>
-            <fieldset>
-              <legend class="filter__title">Цвет</legend>
-              <label for="black">
-                <input type="checkbox" name="color" id="black" checked> Черный
-              </label>
-              <label for="white">
-                <input type="checkbox" name="color" id="white" checked> Белый
-              </label>
-              <label for="blue">
-                <input type="checkbox" name="color" id="blue"> Синий
-              </label>
-              <label for="red">
-                <input type="checkbox" name="color" id="red"> Красный
-              </label>
-              <label for="pink">
-                <input type="checkbox" name="color" id="pink"> Розовый
-              </label>
+            <fieldset class="catalog-filter__group">
+              <legend class="catalog-filter__title">Цвет</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="black" checked> Черный
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="white" checked> Белый
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="blue"> Синий
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="red"> Красный
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="checkbox" name="pink"> Розовый
+                  </label>
+                </li>
+              </ul>
             </fieldset>
-            <fieldset>
-              <legend class="filter__title">Bluetooth</legend>
-              <label for="yes">
-                <input type="radio" value="Есть" name="bluetooth" id="yes" checked>
-              </label>
-              <label for="no">
-                <input type="radio" value="Нет" name="bluetooth" id="no">
-              </label>
+            <fieldset class="catalog-filter__group">
+              <legend class="catalog-filter__title">Bluetooth</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="bluetooth" value="Есть" checked> Есть
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control">
+                    <input class="control-input" type="radio" name="bluetooth" value="Нет"> Нет
+                  </label>
+                </li>
+              </ul>
             </fieldset>
             <button type="submit" class="button filter__button">Показать</button>
           </form>
@@ -117,7 +135,7 @@
             <p class="page-body__subtitle">Сортировка:</p>
             <form class="product-control" action="#">
               <fieldset>
-                <select name="sorting">
+                <select name="sorting" aria-label="Сортировка">
                   <option value="popular">Популярное</option>
                 </select>
               </fieldset>
