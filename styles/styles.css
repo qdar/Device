@@ -31,6 +31,7 @@ html {
 body {
   color: #444;
   font-family: "Rubik", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   margin: 0;
@@ -83,6 +84,20 @@ body {
   z-index: -1;
 }
 /* header */
+.header__user-nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header__user-list {
+  display: flex;
+  width: 471px;
+}
+.user-list__item:first-child {
+  width: 231px;
+}
+.header-search {
+  width: 525px;
+}
 .header-search__input {
   border: 2px solid var(--basic-color);
   width: 360px;
@@ -146,6 +161,20 @@ body {
   color: var(--muted-color);
 }
 
+.navigation__list {
+  display: flex;
+}
+.navigation__item--wide {
+  padding-right: 70px;
+}
+.navigation__item--plus {
+  background-image: url(../images/icons/plus.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.navigation__item + .navigation__item {
+  padding-left: 50px;
+}
 .navigation__link {
   color: var(--basic-color);
   font-family: var(--accent-font);
@@ -154,11 +183,17 @@ body {
   letter-spacing: 0.2em;;
 }
 /* slider */
+.slider__item {
+  display: flex;
+}
 .slider__title {
   font-family: var(--accent-font);
   font-size: 50px;
   line-height: 50px;
   color: var(--basic-color);
+}
+.spec-column {
+  display: flex;
 }
 .spec-column__item b {
   font-size: 36px;
@@ -170,8 +205,16 @@ body {
 }
 
 /* categories */
+.categories__list {
+  display: flex;
+  justify-content: space-between;
+}
+.categories__item {
+  width: 160px;
+}
 .categories__link {
   color: var(--basic-color);
+  font-family: var(--accent-font);
   font-weight: 800;
   letter-spacing: -0.02em;
   text-decoration: none;
@@ -186,6 +229,9 @@ body {
   background-color: var(--accent-color);
 }
 /* service */
+.service__wrapper {
+  display: flex;
+}
 .service__tab {
   background: transparent;
   font-size: 18px;
@@ -237,6 +283,12 @@ body {
   font-style: normal;
 }
 /* about */
+.about__wrapper {
+  display: flex;
+}
+.about__content {
+  width: 532px;
+}
 .about__title {
   font-family: var(--accent-font);
   font-size: 50px;
@@ -316,6 +368,19 @@ address {
   background: #444;
   font-size: 16px;
   color: #fff;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__content-item {
+  width: 240px;
+}
+.footer__content-item--wide {
+  width: 440px;
+}
+.footer__list {
+  display: flex;
 }
 .footer-menu__link {
   font-family: var(--accent-font);

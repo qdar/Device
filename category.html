@@ -133,17 +133,11 @@
         <div class="page-body__content">
           <header class="page-body__header">
             <p class="page-body__subtitle">Сортировка:</p>
-            <form class="product-control" action="#">
-              <fieldset>
-                <select name="sorting" aria-label="Сортировка">
-                  <option value="popular">Популярное</option>
-                </select>
-              </fieldset>
-              <fieldset>
-                <button type="button" class="up"></button>
-                <button type="button" class="down"></button>
-              </fieldset>
-            </form>
+            <select class="product-control" name="sorting" aria-label="Сортировка">
+              <option value="popular">Популярное</option>
+            </select>
+            <button type="button" class="up"></button>
+            <button type="button" class="down"></button>
           </header>
           <ul class="clear-list products">
             <li class="products__item">
