@@ -90,7 +90,7 @@ body {
 }
 .header__user-list {
   display: flex;
-  width: 471px;
+  /* width: 471px; */
 }
 .user-list__item:first-child {
   width: 231px;
@@ -166,6 +166,7 @@ body {
 }
 .navigation__item--wide {
   padding-right: 70px;
+  margin-right: auto;
 }
 .navigation__item--plus {
   background-image: url(../images/icons/plus.svg);
