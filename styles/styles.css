@@ -24,6 +24,7 @@
   --muted-color: rgba(0, 0, 0, 0.3);
   --accent-color: #ffe17f;
   --background-color: #f0f0f0;
+  --accent-background: #fff;
   --accent-font: "Raleway", "Arial", sans-serif;
 }
 html {
@@ -86,7 +87,7 @@ body {
 }
 /* header */
 .header {
-  margin-top: 43px;
+  margin-top: 13px;
 }
 .header__wrapper {
   padding: 0 60px;
@@ -100,13 +101,15 @@ body {
   height: 186px;
   background: var(--accent-color);
   position: absolute;
-  top: 23px;
+  top: 22px;
   left: 0;
   z-index: -1;
 }
 .header-logo {
-  display: block;
   margin-top: -30px;
+}
+.header-logo img {
+  display: block;
 }
 .header-search {
   display: flex;
@@ -153,7 +156,7 @@ body {
   width: 100%;
 }
 .user-list__item:not(:first-child) {
-  margin-left: 26px;
+  margin-left: 22px;
 }
 .user-list__item:first-child {
   margin-right: auto;
@@ -181,7 +184,7 @@ body {
 .user-list__link--cart::before {
   content: attr(data-count);
   color: var(--basic-color);
-  background: #fff;
+  background: var(--accent-background);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -195,6 +198,9 @@ body {
 }
 .user-list__link--exit {
   color: var(--muted-color);
+}
+.header__navigation {
+  margin-bottom: 22px;
 }
 .navigation__list {
   display: flex;
@@ -269,6 +275,7 @@ body {
 }
 .categories__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .categories__item {
@@ -523,7 +530,7 @@ address {
 .footer {
   background: #444;
   font-size: 16px;
-  color: #fff;
+  color: var(--accent-background);
   padding: 62px 0;
 }
 .footer__logo {
@@ -558,7 +565,7 @@ address {
   margin-bottom: 62px;
 }
 .footer-menu__link {
-  color: #fff;
+  color: var(--accent-background);
   font-family: var(--accent-font);
   font-size: 18px;
   text-transform: uppercase;
@@ -603,16 +610,34 @@ address {
   width: 240px;
 }
 .footer__phone {
-  color: #fff;
+  color: var(--accent-background);
   display: block;
   margin-bottom: 62px;
 }
 /* page */
+.page-body {
+  background: var(--background-color);
+}
+.page-body__wrapper {
+  display: flex;
+}
+.page-body__sidebar {
+  width: 320px;
+}
+.page-body__content {
+  width: 840px;
+  box-sizing: border-box;
+}
+.page-header {
+  margin: 35px 0;
+}
 .page-header__title {
+  color: var(--basic-color);
   font-family: var(--accent-font);
   font-size: 50px;
   line-height: 50px;
-  color: var(--basic-color);
+  margin-top: 0;
+  margin-bottom: 16px;
 }
 .breadcrumps {
   display: flex;
@@ -633,11 +658,18 @@ address {
   color: var(--basic-color);
   text-decoration: none;
 }
+.page-body__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
 .page-body__subtitle {
+  color: var(--basic-color);
   font-family: var(--accent-font);
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: var(--basic-color);
+  margin: 0;
 }
 .filter__button {
   border: 0;
@@ -645,25 +677,41 @@ address {
   font-size: 18px;
 }
 /* products */
+.page-body__inner {
+  background: var(--accent-background);
+  padding: 70px 40px;
+}
 .products {
   display: grid;
   grid-template-columns: repeat(2, 360px);
   gap: 44px 40px;
-  background: #fff;
-  padding: 70px 40px;
-}
-.products__title {
-  color: var(--basic-color);
-  font-weight: 700;
-  letter-spacing: -0.02em;
 }
 .products__meta {
   display: flex;
+  justify-content: space-between;
 }
+.products__item img {
+  display: block;
+  object-fit: contain;
+  margin-bottom: 32px;
+}
+.products__title {
+  color: var(--basic-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  margin: 0;
+  max-width: 226px;
+}
+.products__price {
+  margin: 0;
+}
+
 .load-more {
   width: 100%;
   height: 55px;
-  border: 3px solid #E5E5E5;
+  border: 3px solid #e5e5e5;
   background-color: transparent;
   letter-spacing: 0.2em;
   text-transform: uppercase;
@@ -673,7 +721,7 @@ address {
   margin: 44px 0;
 }
 .pagination {
-  background: #EBEBEB;
+  background: #ebebeb;
 }
 .pagination__link {
   font-size: 16px;
@@ -685,17 +733,4 @@ address {
   text-transform: uppercase;
   font-family: var(--accent-font);
   color: var(--basic-color);
-}
-.page-body {
-  background: var(--background-color);
-}
-.page-body__wrapper {
-  display: flex;
-}
-.page-body__sidebar {
-  width: 320px;
-}
-.page-body__content {
-  width: 840px;
-  box-sizing: border-box;
 }
