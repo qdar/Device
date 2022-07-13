@@ -76,7 +76,6 @@ body {
 }
 .button::after {
   content: '';
-  display: block;
   width: 100%;
   height: 8px;
   background: var(--accent-color);
@@ -96,7 +95,6 @@ body {
 }
 .header__wrapper::before {
   content: '';
-  display: block;
   width: 100%;
   height: 186px;
   background: var(--accent-color);
@@ -110,6 +108,9 @@ body {
 }
 .header-logo img {
   display: block;
+}
+.header-logo svg:hover {
+  fill: rgba(0, 0, 0, 0.6); /* не работает так как в свг иконке fill не задан общей группе элементов */
 }
 .header-search {
   display: flex;
@@ -167,6 +168,15 @@ body {
   padding-left: 25px;
   background-position: left center;
   background-repeat: no-repeat;
+}
+.user-list__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.user-list__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.user-list__link:focus {
+  border: 2px solid #AF4FFF;
 }
 .user-list__link--user {
   background-image: url(/images/icons/icon-user.svg);
@@ -229,6 +239,15 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.2em;
+}
+.navigation__link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+.navigation__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.navigation__link:focus {
+  border: 2px solid #AF4FFF;
 }
 /* slider */
 .slider {
@@ -294,11 +313,11 @@ body {
 .categories__item::before {
   content: '';
   background: var(--icon);
+  background-color: var(--accent-color);
   background-repeat: no-repeat;
   display: block;
   width: 160px;
   height: 160px;
-  background-color: var(--accent-color);
 }
 /* service */
 .service {
@@ -308,7 +327,6 @@ body {
 }
 .service::before {
   content: '';
-  display: block;
   width: 100%;
   height: 289px;
   background: var(--background-color);
@@ -363,12 +381,13 @@ body {
   content: '';
   background: var(--icon);
   background-repeat: no-repeat;
-  display: block;
-  width: 136px;
-  height: 164px;
   position: absolute;
   top: 0;
   right: 0;
+}
+.service__tab-content:first-child:after {
+  width: 136px;
+  height: 164px;
 }
 .service__tab-text {
   width: 452px;
@@ -408,7 +427,6 @@ body {
 .banner__info::after {
   content: '';
   background: #dcdcdc;
-  display: block;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -440,7 +458,6 @@ body {
 }
 .about__title::before {
   content: '';
-  display: block;
   width: 84px;
   height: 7px;
   background: var(--basic-color);
@@ -449,14 +466,15 @@ body {
 }
 .about__list li {
   position: relative;
-  padding-left: 26px;
+  padding-left: 34px;
 }
 .about__list li::before {
-  content: '\2022';
-  color: var(--accent-color);
+  content: '';
+  background: #ffc500;
+  border-radius: 50%;
   position: absolute;
   left: 0;
-  display: block;
+  bottom: 10px;
   height: 8px;
   width: 8px;
 }
@@ -502,7 +520,7 @@ address {
 .mailing__form-field {
   font-size: 18px;
   border: 0;
-  border-bottom: 3px solid #C4C4C4;
+  border-bottom: 3px solid #c4c4c4;
   background: transparent;
   width: 558px;
   height: 55px;
@@ -548,11 +566,11 @@ address {
 }
 .footer__address::after {
   content: '';
-  background: var(--accent-color);
-  display: block;
+  background: #ffc500;
   width: 80px;
   height: 7px;
   position: absolute;
+  left: 0;
   bottom: 0;
 }
 .footer__navigation {
@@ -637,7 +655,7 @@ address {
   font-size: 50px;
   line-height: 50px;
   margin-top: 0;
-  margin-bottom: 16px;
+  margin-bottom: 16px; /* внешние отступы лучше выносить в отдельный класс, значит здесь лучше к page-header__title добавить еще какой-то класс?  */
 }
 .breadcrumps {
   display: flex;
@@ -647,11 +665,17 @@ address {
   position: relative;
 }
 .breadcrumps__item::after {
-  content: '>';
-  color: rgba(0, 0, 0, 0.2);
+  content: '';
   position: absolute;
-  top: 2px;
-  right: 14px;
+  top: 12px;
+  right: 18px;
+  background-image: url(../images/icons/breadcrumbs-arrow.svg);
+  background-repeat: no-repeat;
+  width: 4px;
+  height: 7px;
+}
+.breadcrumps__item:last-child:after {
+  content: none;
 }
 .breadcrumps__link {
   font-size: 16px;
@@ -722,15 +746,87 @@ address {
 }
 .pagination {
   background: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 71px;
+}
+.pagination__item:first-child {
+  margin-right: auto;
+}
+.pagination__item:last-child {
+  margin-left: auto;
+}
+.pagination__item:first-child .pagination__link {
+  width: auto;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+.pagination__item:last-child .pagination__link {
+  width: auto;
+  padding: 0 25px;
+  box-sizing: border-box;
 }
 .pagination__link {
   font-size: 16px;
   color: rgba(68, 68, 68, 0.3);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
 }
 .pagination__link--text {
+  color: var(--basic-color);
   letter-spacing: 0.2em;
   text-transform: uppercase;
   font-family: var(--accent-font);
+}
+/* modal */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 72px 80px;
+  background-color: #ffffff;
+  width: 920px;
+  box-sizing: border-box;
+  border: 10px solid #000000;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+}
+.modal-close-button {
+  padding: 0;
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../images/icons/close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  margin-top: 12px;
+}
+.modal-title {
   color: var(--basic-color);
+  font-family: var(--accent-font);
+  font-size: 50px;
+  line-height: 50px;
+  margin-top: 0;
+  margin-bottom: 42px;
+}
+.modal-container-close {
+  display: none;
 }
