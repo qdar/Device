@@ -10,17 +10,8 @@
 <body>
   <header class="header">
     <div class="wrapper header__wrapper">
-      <a class="header-logo" href="#">
-        <svg width="145" height="37" viewBox="0 0 145 37" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M27.2188 0.388916V35.6889H19.6135V33.2889C17.9124 35.1889 15.5107 36.3889 12.1084 36.3889C5.5038 36.3889 0 30.5889 0 23.0889C0 15.5889 5.5038 9.78892 12.1084 9.78892C15.5107 9.78892 18.0124 10.9889 19.6135 12.8889V0.388916H27.2188ZM19.6135 23.0889C19.6135 19.2889 17.1118 16.8889 13.6094 16.8889C10.107 16.8889 7.60524 19.2889 7.60524 23.0889C7.60524 26.8889 10.107 29.2889 13.6094 29.2889C17.1118 29.1889 19.6135 26.8889 19.6135 23.0889Z" fill="black"/>
-          <path d="M43.7298 29.5888C45.8313 29.5888 47.5325 28.7888 48.5332 27.6888L54.6374 31.1888C52.1356 34.5888 48.4331 36.3888 43.6298 36.3888C35.0238 36.3888 29.6201 30.5888 29.6201 23.0888C29.6201 15.5888 35.0238 9.78882 43.0294 9.78882C50.4345 9.78882 55.8382 15.4888 55.8382 23.0888C55.8382 24.1888 55.7381 25.1888 55.538 26.0888H37.6256C38.6263 28.6888 40.9279 29.5888 43.7298 29.5888ZM48.333 20.4888C47.5325 17.5888 45.2309 16.4888 42.9293 16.4888C40.0273 16.4888 38.126 17.8888 37.4255 20.4888H48.333Z" fill="black"/>
-          <path d="M82.1563 10.489L72.8499 35.689H64.2439L54.9375 10.489H63.3433L68.647 26.489L73.9506 10.489C73.9506 10.489 82.1563 10.489 82.1563 10.489Z" fill="black"/>
-          <path d="M83.458 10.489H91.0633V35.689H83.458V10.489Z" fill="black"/>
-          <path d="M93.665 23.0888C93.665 15.5888 99.369 9.78882 107.074 9.78882C111.978 9.78882 116.281 12.3888 118.482 16.2888L111.878 20.0888C110.977 18.2888 109.176 17.2888 106.974 17.2888C103.672 17.2888 101.27 19.6888 101.27 23.0888C101.27 26.5888 103.672 28.8888 106.974 28.8888C109.176 28.8888 111.077 27.7888 111.878 26.0888L118.482 29.8888C116.381 33.7888 112.078 36.3888 107.074 36.3888C99.369 36.3888 93.665 30.5888 93.665 23.0888Z" fill="black"/>
-          <path d="M132.892 29.5888C134.993 29.5888 136.695 28.7888 137.695 27.6888L143.799 31.1888C141.298 34.5888 137.595 36.3888 132.792 36.3888C124.186 36.3888 118.782 30.5888 118.782 23.0888C118.782 15.5888 124.286 9.78882 132.191 9.78882C139.597 9.78882 145 15.4888 145 23.0888C145 24.1888 144.9 25.1888 144.7 26.0888H126.788C127.788 28.6888 130.09 29.5888 132.892 29.5888ZM137.595 20.4888C136.795 17.5888 134.493 16.4888 132.191 16.4888C129.289 16.4888 127.388 17.8888 126.688 20.4888H137.595Z" fill="black"/>
-          <path d="M83.458 0.388916V10.4889L91.0633 0.388916H83.458Z" fill="#510094"/>
-        </svg>
-        <!-- <img src="images/logo-main.svg" width="145" height="36" alt="Device — интернет-магазин техники"> -->
+      <a class="header-logo">
+        <img src="images/logo-main.svg" width="145" height="36" alt="Device — интернет-магазин техники">
       </a>
       <div class="header__user-nav">
         <form class="header-search" action="https://echo.htmlacademy.ru/">
@@ -45,8 +36,28 @@
       </div>
       <nav class="header__navigation navigation">
         <ul class="clear-list navigation__list">
-          <li class="navigation__item navigation__item--wide navigation__item--plus">
-            <a class="navigation__link" href="#">Каталог товаров</a>
+          <li class="navigation__item navigation__item--plus">
+            <a class="navigation__link" href="category.html">Каталог товаров</a>
+            <ul class="clear-list navigation__sublist">
+              <li>
+                <a href="#">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="#">Моноподы для cелфи</a>
+              </li>
+              <li>
+                <a href="#">Экшн-камеры</a>
+              </li>
+              <li>
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="#">Умные часы</a>
+              </li>
+              <li>
+                <a href="#">Квадрокоптеры</a>
+              </li>
+            </ul>
           </li>
           <li class="navigation__item">
             <a class="navigation__link" href="#">Доставка</a>
@@ -61,12 +72,12 @@
       </nav>
     </div>
   </header>
-  <main class="main-container main-page">
+  <main class="main-container">
     <h1 class="visually-hidden">Device — интернет-магазин техники</h1>
     <section class="slider">
       <div class="wrapper">
         <h2 class="visually-hidden">Популярные товары</h2>
-        <ul class="clear-list slider__list">
+        <ol class="clear-list slider__list">
           <!-- Первый слайд -->
           <li class="slider__item">
             <img class="slider__image" src="images/slider-1.png" width="560" height="560" alt="Квадракоптер">
@@ -88,7 +99,7 @@
             </div>
           </li>
           <!-- Конец слайда -->
-        </ul>
+        </ol>
       </div>
     </section>
     <section class="categories">
@@ -120,14 +131,14 @@
       <div class="wrapper service__wrapper">
         <h2 class="visually-hidden">Важная информация для покупателей</h2>
         <div class="service__tabs">
-          <button class="button service__tab service__tab-active" type="button">Доставка</button>
+          <button class="button service__tab service__tab--active" type="button">Доставка</button>
           <button class="button service__tab" type="button">Гарантия</button>
           <button class="button service__tab" type="button">Кредит</button>
         </div>
         <ul class="clear-list service__list">
           <li class="service__tab-content" style="--icon: url('../images/icons/tab-delivery.svg')">
-            <h3 class="service__tab-title">Доставка</h3>
-            <p class="service__tab-text">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            <h3 class="service__title">Доставка</h3>
+            <p class="service__text">Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </li>
           <li class="service__tab-content visually-hidden">
             <h3 class="service__tab-title">Гарантия</h3>
@@ -144,6 +155,7 @@
       <a class="banner__link" href="#">
         Доставим редкий товар под заказ
         <i class="banner__info"></i>
+        <!-- у banner__info контейнер 125px иначе не по центру будет весь баннер -->
       </a>
     </div>
     <section class="about">
@@ -157,7 +169,7 @@
             <li>СДИК</li>
             <li>ТоксБерри</li>
           </ul>
-          <a class="button about__link" href="#">Подробнее о нас</a>
+          <a class="button about__button" href="#"><span>Подробнее о нас</span></a>
         </div>
         <div class="about__content">
           <h2 class="about__title">Контакты</h2>
@@ -165,11 +177,11 @@
           <h3 class="about__subtitle">Интернет-магазин «Девайс»</h3>
           <address>
             Санкт-Петербург, набережная реки Карповки, 5, литера П. <br>
-            <a class="black-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+            <a class="about__link" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </address>
           <h3 class="about__subtitle">Время работы</h3>
           <p class="about__time-works">пн—пт: с 10:00 до 22:00<br>сб—вс: с 10:00 до 19:00</p>
-          <a class="button about__link" href="#">Напишите нам</a>
+          <a class="button about__button" href="#">Напишите нам</a>
         </div>
       </div>
     </section>
@@ -180,7 +192,7 @@
         <form class="mailing__form" action="https://echo.htmlacademy.ru/">
           <label for="email" class="visually-hidden">Введите адрес электронной почты</label>
           <input class="mailing__form-field" type="email" name="email" id="email" placeholder="Ваш e-mail">
-          <button type="submit" class="mailing__form-button">Подписаться</button>
+          <button type="submit" class="mailing__form-button btn btn-primary">Подписаться</button>
         </form>
         <p class="mailing__tagging">Это бесплатно</p>
       </div>
@@ -188,42 +200,44 @@
   </main>
   <footer class="footer">
     <div class="wrapper">
-      <img class="footer__logo" src="images/logo-footer.svg" width="145" height="36" alt="Device — интернет-магазин техники">
+      <a class="footer__logo">
+        <img src="images/logo-footer.svg" width="145" height="36" alt="Device — интернет-магазин техники">
+      </a>
       <div class="footer__content">
         <address class="footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
         <div class="footer__navigation">
-          <ul class="clear-list footer-menu">
-            <li class="footer-menu__item">
-              <a class="footer-menu__link" href="#">Доставка</a>
+          <ul class="clear-list secondary-menu">
+            <li class="secondary-menu__item">
+              <a class="secondary-menu__link" href="#">Доставка</a>
             </li>
-            <li class="footer-menu__item">
-              <a class="footer-menu__link" href="#">Гарантия</a>
+            <li class="secondary-menu__item">
+              <a class="secondary-menu__link" href="#">Гарантия</a>
             </li>
-            <li class="footer-menu__item">
-              <a class="footer-menu__link" href="#">Контакты</a>
+            <li class="secondary-menu__item">
+              <a class="secondary-menu__link" href="#">Контакты</a>
             </li>
           </ul>
-          <ul class="clear-list footer-social">
-            <li class="footer-social__item">
-              <a class="footer-social__link footer-social__link--telegram" href="#">
+          <ul class="clear-list social">
+            <li class="social__item">
+              <a class="social__link social__link--telegram" href="#">
                 <span class="visually-hidden">Перейти на наш Телеграмм канал</span>
               </a>
             </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link footer-social__link--youtube" href="#">
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">
                 <span class="visually-hidden">Перейти на наш ютуб канал</span>
               </a>
             </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link footer-social__link--twitter" href="#">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
                 <span class="visually-hidden">Перейти на наш twitter канал</span>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer__copyright">
+        <div class="footer__copyright"> <!-- footer__copyright -  а как лучше назвать это? -->
           <a class="footer__phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
-          <a class="footer__copy" href="#">
+          <a class="footer__author" href="#">
             <img src="images/htmlacademy.svg" width="115" height="33" alt="Разработчик сайта htmlacademy">
           </a>
         </div>
