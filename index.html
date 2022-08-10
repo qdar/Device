@@ -31,6 +31,29 @@
               Корзина
               <span class="visually-hidden">В корзине лежит 2 товара</span>
             </a>
+             <div class="popover"><!-- добавить класс popover--open   -->
+              <div class="popover__content">
+                <ul class="clear-list cart-list">
+                  <li class="cart-list__item">
+                    <img class="cart-list__image" src="/images/cart-image-one.jpg" width="39" height="43" alt="">
+                    <p class="cart-list__title">Любительская селфи-палка</p>
+                    <button class="cart-list__close" type="button"></button>
+                  </li>
+                  <li class="cart-list__item">
+                    <img class="cart-list__image" src="/images/cart-image-two.jpg" width="39" height="43" alt="">
+                    <p class="cart-list__title">Профессиональная селфи-палка</p>
+                    <button class="cart-list__close" type="button"></button>
+                  </li>
+                </ul>
+                <div class="cart-list__total">
+                  <span>Товаров: 2</span>
+                  <span>Сумма: 2000 ₽</span>
+                </div>
+                <div class="cart-list__button-container">
+                  <a class="cart-list__button" href="#">Открыть корзину</a>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
@@ -359,9 +382,7 @@
               <span class="form__label">
                 <label class="form__label-box" for="quntaty">Количество:</label>
                 <span class="tooltip">
-                  <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-label">
-                    <!-- <svg class="tooltip__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"><path d="M8 14A6 6 0 108 2a6 6 0 000 12zm1.27-8.73a1.27 1.27 0 11-2.54 0 1.27 1.27 0 012.54 0zm0 2.23V11H6.73V7.5h2.54z"/></svg> -->
-                  </button>
+                  <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-label"></button>
                   <span class="tooltip__text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. <br> Привезём сколько получится по требованиям <br> к провозу багажа.</span>
                 </span>
               </span>
@@ -374,7 +395,6 @@
                   <span class="visually-hidden">Плюс</span>
                 </button>
               </span>
-
             </p>
           </div>
           <button class="button form__button" type="submit">
@@ -390,8 +410,8 @@
 
 <!--
   Что не получилось
-  - активное состояние кнопок соц сетей
-  - высота у банера в псевдоэлементов
-  - цвет кружочка i в банере
-  - apperance в инпуте количество
+  - активное состояние кнопок соц сетей, не хочется svg в разметку
+  - высота у банера в псевдоэлементов 100px
+  - цвет кружочка i в банере, светлее чем в макете
+  - apperance в инпуте количество не убралось
  -->

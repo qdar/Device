@@ -282,7 +282,7 @@ a {
 }
 
 .user-list__item:not(:first-child) {
-  margin-left: 27px;
+  margin-left: 30px;
 }
 
 .user-list__item:first-child {
@@ -1735,7 +1735,7 @@ address {
 
 .tooltip__text {
   background: #000000;
-  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
   color: #ffffff;
   font-size: 16px;
@@ -1759,4 +1759,105 @@ address {
   top: -6px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* popover */
+.popover {
+  position: absolute;
+  top: 110px;
+  right: -16px;
+  z-index: 1;
+  box-sizing: border-box;
+  width: 320px;
+  color: #fff;
+  background-color: #000;
+  min-height: 190px;
+  display: none;
+}
+
+.popover--open {
+  display: block;
+}
+
+.popover:after {
+  content:'';
+  background-image: url("../images/icons/tooltip-arrow.svg");
+  width: 14px;
+  height: 6px;
+  position:absolute;
+  top: -6px;
+  right: 50%;
+  transform: translateX(100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popover__content {
+  height: 100%;
+}
+
+.cart-list__close {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  background-image: url(../images/icons/close-white.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 10px;
+  height: 10px;
+}
+
+.cart-list__title {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+
+.cart-list__item {
+  display: grid;
+  grid-template-columns: 39px 170px 10px;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.cart-list__total {
+  background-color: #1a1a1a;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+}
+
+.cart-list__total span:last-child {
+  text-align: right;
+}
+
+.cart-list__button-container {
+  padding: 20px;
+}
+
+.cart-list__button {
+  color: #000;
+  font-family: var(--accent-font);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 800;
+  background-color: #fff;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-list__button:hover {
+  background-color: var(--accent-color);
+}
+
+.cart-list__button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.cart-list__button:focus {
+  outline: 2px solid var(--focus-color);
 }
