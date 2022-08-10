@@ -344,7 +344,7 @@
               <input class="form__input form__input--name" type="text" id="your-name" name="your-name" placeholder="Введите имя" required>
               <span class="form__annotation">Добавьте имя</span>
             </p>
-            <p class="form__field">
+            <p class="form__field form__field--error">
               <label class="form__label" for="your-email">Ваш e-mail:</label>
               <input class="form__input form__input--email" type="text" id="your-email" name="your-email" placeholder="почта" required>
               <span class="form__annotation">Забавный у вас адрес</span>
@@ -353,10 +353,18 @@
           <div class="form__group">
             <p class="form__field">
               <label class="form__label" for="what-go">Что нужно привезти:</label>
-              <input class="form__input form__input--wide" type="text" id="what-go" name="what-go" placeholder="В свободной форме">
+              <input class="form__input form__input--wide" type="text" id="what-go" name="what-go" placeholder="В свободной форме" disabled>
             </p>
             <p class="form__field">
-              <label class="form__label" for="quntaty">Количество:</label>
+              <span class="form__label">
+                <label class="form__label-box" for="quntaty">Количество:</label>
+                <span class="tooltip">
+                  <button class="tooltip__toggle" type="button" aria-labelledby="tooltip-label">
+                    <!-- <svg class="tooltip__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"><path d="M8 14A6 6 0 108 2a6 6 0 000 12zm1.27-8.73a1.27 1.27 0 11-2.54 0 1.27 1.27 0 012.54 0zm0 2.23V11H6.73V7.5h2.54z"/></svg> -->
+                  </button>
+                  <span class="tooltip__text" role="tooltip" id="tooltip-label">Постараемся найти, сколько нужно. <br> Привезём сколько получится по требованиям <br> к провозу багажа.</span>
+                </span>
+              </span>
               <span class="form__box box-field">
                 <button class="box-field__button box-field__button--minus" type="button">
                   <span class="visually-hidden">Минус</span>
