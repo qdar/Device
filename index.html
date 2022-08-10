@@ -328,7 +328,7 @@
   </footer>
 
   <!-- убрать класс modal-container--close, чтобы показать модальное окно -->
-  <div class="modal-container ">
+  <div class="modal-container modal-container--close">
     <div class="modal">
       <section class="modal__content">
         <header class="modal__header">
@@ -341,15 +341,37 @@
           <div class="form__group">
             <p class="form__field">
               <label class="form__label" for="your-name">Ваше имя:</label>
-              <input class="form__input" type="text" id="your-name" name="your-name" placeholder="Введите имя">
+              <input class="form__input form__input--name" type="text" id="your-name" name="your-name" placeholder="Введите имя" required>
               <span class="form__annotation">Добавьте имя</span>
             </p>
             <p class="form__field">
-              <label class="form__label" for="your-name">Ваш e-mail:</label>
-              <input class="form__input" type="text" id="your-name" name="your-name" placeholder="почта">
+              <label class="form__label" for="your-email">Ваш e-mail:</label>
+              <input class="form__input form__input--email" type="text" id="your-email" name="your-email" placeholder="почта" required>
               <span class="form__annotation">Забавный у вас адрес</span>
             </p>
           </div>
+          <div class="form__group">
+            <p class="form__field">
+              <label class="form__label" for="what-go">Что нужно привезти:</label>
+              <input class="form__input form__input--wide" type="text" id="what-go" name="what-go" placeholder="В свободной форме">
+            </p>
+            <p class="form__field">
+              <label class="form__label" for="quntaty">Количество:</label>
+              <span class="form__box box-field">
+                <button class="box-field__button box-field__button--minus" type="button">
+                  <span class="visually-hidden">Минус</span>
+                </button>
+                <input class="form__input box-field__input" type="number" id="quntaty" name="quntaty" value="1">
+                <button class="box-field__button box-field__button--plus" type="button">
+                  <span class="visually-hidden">Плюс</span>
+                </button>
+              </span>
+
+            </p>
+          </div>
+          <button class="button form__button" type="submit">
+            <span>Отправить</span>
+          </button>
         </form>
       </section>
     </div>
@@ -363,4 +385,5 @@
   - активное состояние кнопок соц сетей
   - высота у банера в псевдоэлементов
   - цвет кружочка i в банере
+  - apperance в инпуте количество
  -->
