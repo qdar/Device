@@ -1976,7 +1976,7 @@ address {
 .box-field {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (60px)[3];
+  -ms-grid-columns: (60px)3;
   grid-template-columns: repeat(3, 60px);
 }
 
@@ -2176,7 +2176,7 @@ address {
   padding: 20px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (50%)[2];
+  -ms-grid-columns: (50%)2;
   grid-template-columns: repeat(2,50%);
 }
 
