@@ -11,7 +11,7 @@
 <body>
   <header class="header">
     <div class="wrapper header__wrapper">
-      <a class="header__logo" href="/">
+      <a class="header__logo" href="index.html">
         <img src="images/logo-main.svg" width="145" height="36" alt="Device — интернет-магазин техники">
       </a>
       <div class="header__user-nav">
@@ -35,7 +35,7 @@
               Корзина
               <span class="visually-hidden">В корзине лежит 2 товара</span>
             </a>
-            <div class="popover popover-open0"><!-- добавить класс popover-open   -->
+            <div class="popover popover--open4"><!-- добавить класс popover-open   -->
               <div class="popover__content">
                 <ul class="clear-list cart-list">
                   <li class="cart-list__item">
@@ -53,12 +53,12 @@
                     <button class="cart-list__close" type="button"></button>
                   </li>
                 </ul>
-                <div class="cart-list__total">
+                <div class="popover__total">
                   <span>Товаров: 2</span>
                   <span>Сумма: 2000 ₽</span>
                 </div>
-                <div class="cart-list__button-container">
-                  <a class="cart-list__button" href="#">Открыть корзину</a>
+                <div class="popover__button-container">
+                  <a class="popover__button" href="#">Открыть корзину</a>
                 </div>
               </div>
             </div>
@@ -283,7 +283,7 @@
               </a>
             </li>
           </ul>
-          <button type="button" class="btn btn-default">Загрузить ещё</button>
+          <button type="button" class="btn">Загрузить ещё</button>
           <ul class="clear-list pagination">
             <li class="pagination__item">
               <a class="pagination__link pagination__link--text" href="#">Назад</a>
@@ -348,7 +348,7 @@
             </li>
           </ul>
         </div>
-        <div class="footer__copyright"> <!-- footer__copyright -  а как лучше назвать это? -->
+        <div class="footer__box">
           <a class="footer__link" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           <a class="footer__author" href="#">
             <svg width="115" height="33" viewBox="0 0 115 33" fill="none" xmlns="http://www.w3.org/2000/svg">
